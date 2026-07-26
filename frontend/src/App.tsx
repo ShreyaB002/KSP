@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { CaseProvider } from './context/CaseContext';
 import MainLayout from './components/MainLayout';
 import DashboardPage from './pages/DashboardPage';
@@ -10,7 +10,7 @@ import AnalysisPage from './pages/AnalysisPage';
 export default function App() {
   return (
     <CaseProvider>
-      <BrowserRouter>
+      <HashRouter>
         <MainLayout>
           <Routes>
             <Route path="/" element={<DashboardPage />} />
@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/analysis" element={<AnalysisPage />} />
           </Routes>
         </MainLayout>
-      </BrowserRouter>
+      </HashRouter>
     </CaseProvider>
   );
 }
