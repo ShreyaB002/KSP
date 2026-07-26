@@ -1,0 +1,10 @@
+{
+  "client": {
+    "source": "frontend/dist",
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".env"
+    ]
+  }
+}
